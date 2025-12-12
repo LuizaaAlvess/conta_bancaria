@@ -42,7 +42,7 @@ export abstract class Conta {
     public set saldo(saldo: number) {
         this._saldo = saldo;
     }
-    public sacar(valor: number): boolean {
+    public sacar( valor: number): boolean {
 
         if (this._saldo < valor) {
             console.log("\n Saldo insuficiente!");
